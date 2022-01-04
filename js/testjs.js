@@ -32,3 +32,16 @@ $(document).ready(function(){
     );
     
 })
+
+
+$(document).ready(function(){
+    $(".2022010401").on("click",function(event){
+        window.alert("test001");
+        $(".2022010402").append(event.isPropagationStopped().toString());
+    })
+    $(".2022010401 div").on("click",function(event){
+        window.alert("test002");
+        event.stopPropagation();
+        $(".2022010402").append(event.isPropagationStopped().toString());
+    })
+})

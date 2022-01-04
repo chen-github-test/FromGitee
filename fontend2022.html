@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fontend-2022</title>
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/testjs.js"></script>
     <script src="/bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
     <script src="/bootstrap-5.0.0-beta2-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/bootstrap-5.0.0-beta2-dist/css/bootstrap-reboot.min.css">
@@ -17,8 +19,16 @@
         </h1>
         <p>Some fontend demo will code down below.</p>
     </div>
-    <div class="contianer bg-light text-white p-3">
+    <div class="contianer bg-light text-dark p-3 text-center m-2 ">
         event.isPropagationStopped()用来查看事件对象中是否调用event.PropagationStop()方法 结果返回一个布尔值。
+        <br>
+        event.stopPropagation 防止事件冒泡到DOM树上 也就是不触发任何前辈元素的事件
+        <br>
+        <div class="rounded bg-info 2022010401" style="width: 100px; height: 100px;">tsgd
+        <div class="bg-warning p-2 m-2 ">test</div>
+        </div>
+        <div class="bg-info 2022010402"></div>
     </div>
+    
 </body>
 </html>
