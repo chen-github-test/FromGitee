@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <title>Test Bootstrap5.0 Document</title>
+</head>
+<body>
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <!-- <script src="/bootstrap-5.0.0-beta2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css"> -->
+    <script src="/bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <div class="jumbotron text-center">
+        <h1>Today's Works</h1>
+        <p>You have works to do today.The blow list shows what you have to do.</p>
+    </div>
+    <div class="container">
+        <div class="alert alert-info alert-dismissable">
+            <h2 data-toggle="collapse" data-target="#test20210306000">jumbotron text-center</h2>
+            <div id="test20210306000" class="collapse" data-parent=".container">
+                
+                    <p>
+                        .container 类用于固定宽度并支持响应布局的容器；
+                        <br>
+                        .container-fluid类用于100%宽度，占据全部视口的容器；
+                        <br>
+                        bootstrap4里面没有面板panel;
+                    </p>
+              
+            </div>
+        </div>
+        
+        <div class="alert alert-info alert-dismissable">
+            <h1 data-toggle="collapse" data-target="#test20210326001">display 标题</h1>
+            <div id="test20210326001" data-parent=".container" class="collapse">
+                <p>display 样式定制了四种来显示h1样式</p>
+                <h1 class="display-1">test display-1</h1>
+                <h1 class="display-2">test display-2</h1> 
+                <h1 class="display-3">test display-3</h1> 
+                <h1 class="display-4">test display-4</h1>
+            </div>     
+        </div>
+
+        <div class="alert alert-info alert-dismissable">
+            <h1 data-toggle="collapse" data-target="#test20210326002">small 用来创建字体更小，颜色更浅的字体</h1>  
+            <div id="test20210326002" class="collapse" data-parent=".container">
+                <h1>h1标题 <small>副标题颜色更浅</small></h1>
+            </div>
+            
+        </div>
+
+        <div class="alert alert-info alert-dismissable">
+            <h1 data-toggle="collapse" data-target="#test20210326003">mark 标记背景为黄色 用于标记重要文本</h1>
+            <div id="test20210326003" class="collapse" data-parent=".container">
+                <p> <mark>这篇区域用于被标记的文本。</mark></p>
+            </div>
+            
+        </div>
+
+
+        <div class="alert alert-info alert-dismissable">
+            <p data-toggle="collapse" data-target="#test20210326004" >abbr样式显示文本底部一条虚线边框</p>
+            <div id="test20210326004" class="collapse" data-parent=".container">
+                <p>The <abbr title="ZHU CHEN">ZC</abbr> means what?Show it when you hover it.</p>
+            </div>
+            
+        </div>
+
+
+        <div class="alert alert-info alert-dismissable">
+            <h1 data-toggle="collapse" data-target="#test20210326005" >引用blockquote可以添加.blockquote引用类 使用blockquote-footer 来引用注脚</h1>
+            <div id="test20210326005" class="collapse" data-parent=".container">
+                <blockquote class="blockquote">我家门前有两棵树，一颗是枣树，一棵树橘子树。</blockquote>
+            <footer class="blockquote-footer">周树人</footer>
+            </div>
+            
+        </div>
+
+        <div class="alert alert-info alert-dismissable">
+            <h1 data-toggle="collapse" data-target="#test20210326006" >description list(描述性列表)</h1>
+            <div id="test20210326006" class="collapse" data-parent=".container">
+                <dl>
+                    <dt>coffee</dt>
+                    <dd>-hot black and hot drink</dd>
+                    <dt>football</dt>
+                    <dd>-ball playing with feet</dd>
+                    <dt>pencil</dt>
+                    <dd>-wrtting some sticks</dd>
+                </dl>
+            </div>
+            
+        </div>
+        
+        <div class="alert alert-info alert-dismissable">
+            <h1 data-toggle="collapse" data-target="#test20210326007">可以将代码元素放入code片段中</h1>
+            <div id="test20210326007" class="collapse" data-parent=".container">
+                代码元素 <code>span</code> <code>div</code>这些都是代码元素；
+            </div>
+            
+        </div>
+
+        <div class="alert alert-info alert-dismissable">
+            <h2 data-toggle="collapse" data-target="#test20210326008">显示文本里面的内容用键盘操作，使用kbd元素</h2>
+            <div id="test20210326008" class="collapse" data-parent=".container">
+                <p>Use <kbd>Ctrl + P</kbd> to print the page</p>
+            </div>
+            
+        </div>
+
+        <div class="alert alert-info alert-dismissable">
+            <h2 data-toggle="collapse" data-target="#test20210326009">使用pre元素来显示输出多行文本 添加.pre-scrollable 显示文本区域可滚动</h2>
+            <div id="test20210326009" class="collapse" data-parent=".container">
+                <pre class="pre-scrollable">
+                    This is one 
+                    text
+                    mutliple lines
+                    show more lines
+                </pre>
+            </div>
+            
+        </div>
+
+        <div class="alert alert-info alert-dismissable">
+            <H2 data-toggle="collapse" data-target="#test20210326010">字体的加粗和斜体</H2>
+            <div class="collapse" data-parent=".container" id="test20210326010">
+                <p class="font-weight-bold">Bold text</p>
+                <p class="font-weight-light">light weight text</p>
+                <p class="font-weight-normall">normall weight text</p>
+                <p class="font-italic">text font-italic 斜体</p>
+                <p class="lead">use .lead to make paragragy "stand out".使用.lead类使得段落更突出。</p>
+                <p class="small">use .small class to make paragragy smaller.使用.small来使得一段文本变得更小一点</p>
+                <p class="text-left">左对齐文本</p>
+                <p class="text-right">右对齐文本</p>
+                <p class="text-center">居中对齐文本</p>
+                <p class="text-justify">设定文本对齐方式，超过文本自动换行</p>
+                <p class="text-nowrap">设定文本对齐方式，超过文本不会自动换行，会隐藏显示</p>
+            </div>
+            
+        </div>
+        <div class="alert alert-success">
+            <h2 data-toggle="collapse" data-target="#test20210326011">text-lowercase 将所有字母变成小写，text-uppercase 将所有字母变成大写，text-capitablize 将所有字母开头大写</h2>
+            <div id="test20210326011" class="collapse" data-parent=".container">
+                <p class="text-lowercase">
+                    HJKHJKHHJKHJLKJKLJLKJLJLKJLK 将前面的大写字母变成小写；
+                </p>
+                <p class="text-uppercase">
+                    jjljkljJLJKLJLK:JKLJLKJ:jkjljjjjljkljljlkjljj将所有小写的字母变成大写；
+                </p>
+                <p class="text-capitalize">
+                    jjl jkljfda jklj lkja rfa qq re将每一个单词的首字母变成大写；
+                </p>
+            </div>
+            
+        </div>
+
+
+        <div class="alert alert-success">
+           <h2 data-toggle="collapse" data-target="#test20210326012" >具有代表意义的颜色类</h2>
+           <div class="collapse" id="test20210326012" data-parent=".container">
+                <p class="text-muted">柔和的文本</p>
+                <p class="text-primary">重要文本的颜色</p>
+                <p class="text-success">成功文本的颜色</p>
+                <p class="text-info">提示信息的颜色</p>
+                <p class="text-warning">警告文本的颜色</p>
+                <p class="text-danger">危险操作文本</p>
+                <p class="text-dark">深灰</p>
+                <p class="text-light">浅灰</p>
+                <p class="text-white">白色</p>
+           </div>
+            
+        </div>
+
+        <div class="alert alert-success">
+            <h2 data-toggle="collapse" data-target="#test20210326013">背景色</h2>
+            <div class="collapse" id="test20210326013" data-parent=".container">
+                <p class="bg-primary text-white">haha</p>
+                <p class="bg-success text-white">haha</p>
+                <p class="bg-danger text-white">haha</p>
+                <p class="bg-warning text-white">haha</p>
+                <p class="bg-info text-white">haha</p>
+                <p class="bg-dark text-white">haha</p>
+                <p class="bg-light text-dark">haha</p>
+                <p class="bg-secondary text-white">haha</p>
+            </div>
+             
+         </div>
+
+         <div class="alert ">
+             <h2 data-toggle="collapse" data-target="#test20210326014">这是一个制作表格的内容</h2>
+             <div class="collapse" id="test20210326014" data-parent=".container">
+                <table class="table table-striped table-hover table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Name</th>
+                            <th>Career</th>
+                            <th>PhoneNumber</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>zc</td>
+                            <td>testing</td>
+                            <td>7897078</td>
+                        </tr>
+                        <tr>
+                           <td>zc</td>
+                           <td>testing</td>
+                           <td>7897078</td>
+                       </tr>
+                       <tr>
+                           <td>zc</td>
+                           <td>testing</td>
+                           <td>7897078</td>
+                       </tr>
+                       <tr>
+                           <td>zc</td>
+                           <td>testing</td>
+                           <td>7897078</td>
+                       </tr>
+                    </tbody>
+                </table>
+             </div>
+         </div>
+
+         <div class="alert alert-success">
+             <h2 data-toggle="collapse" data-target="#test20210326015">这是关于图片的设置问题</h2>
+             <div id="test20210326015" class="collapse" data-parent=".container">
+                <p>
+                    .rounded 类设置圆角 img-thumbnail 类设置缩略图 外加边框 img-fluid类设置响应式图片；
+                </p>
+                <div>
+                    <img src="/demo4.jpg" alt="testimg" class="rounded img-thumbnail img-fluid">
+                </div>
+             </div>
+             
+         </div>
+
+        <div class="alert alert-success">
+            <h2 data-toggle="collapse" data-target="#test20210326016">添加jumbotron 类可以创建一个灰色背景框，里面可以创建一些特殊信息或者代码</h2>
+            <div class="collapse" data-parent=".container" id="test20210326016">
+                <div class="jumbotron">
+                    <h1>some test words jumbotron jumbotron jumbotron</h1>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="alert alert-dark alert-dismissable fade show">
+            <button class="close" data-dismiss="alert">&times;</button>
+            .fade .show 用来给alert 警告框设置淡入淡出；
+        </div>
+
+        <div class="alert alert-dark alert-dismissable fade show">
+           <button type="button" class="btn btn-success">success</button>
+           <button type="button" class="btn btn-outline-dark">dark</button>
+           <button type="button" class="btn btn-dark disabled">disabled</button>
+        </div>
+
+        <div class="alert alert-dark alert-dismissable fade show">
+           <h2 data-toggle="collapse" data-target="#test20210326017">向div 元素 添加.btn-group 来创建按钮组</h2>
+           <div class="collapse" id="test20210326018" data-parent=".container">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-success">ASP.NET</button>
+                    <button type="button" class="btn btn-success">JAVA</button>
+                    <div class="btn-group ">
+                        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">PYTHON</button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">flask</a>
+                            <a href="#" class="dropdown-item">diango</a>
+                        </div>
+                    </div>   
+                </div>
+           </div>
+            
+        </div>
+
+        <div class="alert alert-dark alert-dismissable fade show">
+            <h2>badges主要用于凸显新的领域或者未读项，使用.badges类直接添加到span元素上就可以</h2>
+            <h2>使用badges-pill来设置药丸徽章</h2>
+            <span class="badge badge-danger">5</span>
+            <button class="btn btn-success">
+                Message <span class="badge badge-pill badge-danger">5</span>
+            </button>
+            <button class="btn btn-warning">
+                Message <span class="badge badge-pill badge-dark">5</span>
+            </button>
+             
+        </div>
+
+
+        <div class="alert alert-dark alert-dismissable fade show">
+           <h2>要创建一个基本分页可以在ul元素上添加.pagination类，然后在li元素上添加.page-item类 然后在连接a里面添加.page-link类</h2>
+           <h2>disabled active 要在li里面添加类，才能显示激活或者禁用状态</h2>
+            <ul class="pagination">
+                <li class="page-item"><a href="#"  class="page-link ">previous</a></li>
+                <li class="page-item  active"><a href="#"  class="page-link">1</a></li>
+                <li class="page-item"><a href="#"  class="page-link">2</a></li>
+                <li class="page-item"><a href="#"  class="page-link">3</a></li>
+                <li class="page-item"><a href="#"  class="page-link">4</a></li>
+                <li class="page-item"><a href="#"  class="page-link">Next</a></li>
+            </ul>
+        </div>
+
+        <div class="alert alert-dark alert-dismissable fade show">
+            <h2>要创建列表项，首先在ul上添加list-group类，在li里面添加list-group-item类，在使用active和disabled来激活和禁用，使用list-group-item-action 来改变列表项的item</h2>
+            <ul class="list-group">
+                <li class="list-group-item active">test item</li>
+                <li class="list-group-item list-group-item-success">test item</li>
+                <li class="list-group-item disabled">test item</li>
+            </ul>
+        </div>
+
+        <div class="alert alert-dark alert-dismissable fade show">
+            <h2>要创建链接列表项目，要在一个将ul 替换为 div,再将li 替换为a</h2>
+            <div class="list-grop">
+                <a href="#" class="list-group-item active">test test</a>
+                <a href="#" class="list-group-item list-group-item-action">test test</a>
+                <a href="#" class="list-group-item list-group-item-success">test test</a>
+                <a href="#" class="list-group-item disabled" >test test</a>
+                <a href="#" class="list-group-item list-group-item-info" >test test</a>
+            </div>
+        </div>
+
+        <div class="alert alert-dark alert-dismissable fade show">
+            <h2>创建卡片 div里面添加.card类 在div下面创建 .card-title .card-body .card-footer</h2>
+            <h2>使用 .bg-info .bg-success .bg-warning 来显示颜色</h2>
+            <h2>使用 card-title card-text card-link 分别创建标题，文本 和连接样式</h2>
+            <h2>使用card-img-top card-img-bottom card-img-overlay来设置图片样式 </h2>
+            <div class="card">
+                <div class="card-header bg-info">
+                    <h3 class="card-title text-center">这是一个测试标题</h3>
+                </div>
+                <div class="card-body">
+                    <div class="card-text text-left text-info">
+                        这里是文本区域。
+                        <br>
+                        test
+                        <br>
+                        hhaha 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h2>创建下拉菜单</h2>
+            <h3>创建一个div 或者按钮组 dropdown,在创建下拉图标的 的button 添加 .dropdown-toggle 以及 data-toggle="dropdown" 
+                之后添加 dropdown-menu 的 div , 里面添加 link a 的dropdown-item 的链接
+            </h3>
+            <div class="btn btn-group">
+                <button class="btn btn-info">Test</button>
+                <button class="btn btn-info">C#</button>
+                <div class="dropdown">
+                    <button class="dropdown-toggle btn btn-info" data-toggle="dropdown">Python</button>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-header">title</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="" class="dropdown-item">python code</a>
+                        <a href="" class="dropdown-item">python Testing</a>
+                        <a href="" class="dropdown-item">python deve</a>
+                    </div>  
+                </div>
+            </div>
+
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h2>折叠可以很容易的实现折叠与显示</h2>
+            <h3>.collapse 用于指定一个折叠元素，点击之后会在隐藏与显示之间切换
+                <br>
+                只要 data-toggle="collapse" 在设置data-target="#id"
+                <br>
+                默认情况下是隐藏的，可以添加.show来默认显示
+                <br>
+                使用data-parent 可以实现指展开一个div的效果
+                <button class="btn btn-info" data-toggle="collapse" data-target="#testcollapse">testCollapse</button>
+                <div id="testcollapse" class="collapse show">
+                    test tesat dsajlkdjla
+                </div>
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#card1" data-toggle="collapse" class="collapsed card-link" >card chapter</a>
+                        </div>
+                        <div class="collapse" id="card1" data-parent="#accordion">
+                            <div class="card-body">
+                                idot shot dummy...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#card2"  data-toggle="collapse" class="collapsed card-link">card chapter</a>
+                        </div>
+                        <div class="collapse" id="card2" data-parent="#accordion">
+                            <div class="card-body">
+                                idot shot dummy...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a href="#card3"  data-toggle="collapse" class="collapsed card-link">card chapter</a>
+                        </div>
+                        <div class="collapse" id="card3" data-parent="#accordion">
+                            <div class="card-body">
+                                idot shot dummy...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+  
+            </h3>
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            如果你想创建一个简单的水平导航栏，可以在《ul》元素上添加nav类，在每一个《li》选项上添加。nav-item类，在每一个链接上添加
+            .navlink类
+            <br>
+            在 ul 上添加.nav-tabs类可以将导航转化为选项卡，.nav-pills设置胶囊形状.fade类 .nav-justified类可以设置导航向的齐行等宽显示；
+            <br>
+            如果你要设置选项卡是动态可切换的，可以在链接上添加 data-toggle="tab"属性 然后再每一个选项对应的内容上添加.tab-pane类
+            <br>
+            <ul class="nav nav-tabs nav-justified">
+                <li class="nav-item">
+                    <a href="#test1" class="nav-link active" data-toggle="tab">test1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#test2" class="nav-link" data-toggle="tab">test2</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#test3" class="nav-link" data-toggle="tab">test3</a>
+                </li>
+                
+            </ul>
+            <br/>
+            <div class="tab-content">
+                <div id="test1" class="container tab-pane active">
+                    <h3>FDSJAJ</h3>
+                    <p>fdf</p>
+                </div>
+                <div id="test2" class="container tab-pane fade">
+                    <h3>FDSJAJ</h3>
+                    <p>rerjejlkjrlfdsafdsafqkewjrljewlr;ejwqlk;r</p>
+                </div>
+                <div id="test3" class="container tab-pane fade">
+                    <h3>FDSJAJ</h3>
+                    <p>haha</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h2>导航栏一般放在页面顶部</h2>
+            <h3>我们可以使用.navbar类来创建一个标准导航栏，后面紧跟.navbar-expand-sm来创建响应式布局
+                导航栏上的选项可以使用ul元素添加class="navbar-nav"类，然后再li里面添加.nav-item类 在《a》标签里面
+                添加nav-link 类
+            </h3>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">test1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">test2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">test3</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h2>如果要在导航里面显示品牌高亮的效果，可以使用 navbar-brand类来设置效果</h2>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">Backlog</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">test link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">test link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">test link 3</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h2>导航栏的表单与按钮。可以在form里面添加class=“form-inline”</h2>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">BACKLOG</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">test links1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">test links2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">test links3</a>
+                    </li>
+                </ul>
+                <form action="#" class="form-inline">
+                    <input type="text" class="form-control" placeholder="search">
+                    <button type="submit" class="btn btn-success">search</button>
+                </form>
+
+            </nav>
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h2 data-toggle="collapse" data-target="#test20210329">面包屑导航</h2>
+            <div class="collapse" id="test20210329" data-parent=".container">
+                <p>可以使用ol+li组合来实现breadcrumb,通过添加类.breadcrumb 和 .breadcrumb-item来实现，
+                    或者使用nav+a的组合
+                </p>
+                <nav class="breadcrumb bg-info">
+                    <a href="#" class="breadcrumb-item">Home</a>
+                    <a href="#" class="breadcrumb-item">bootstrap</a>
+                    <a href="#" class="breadcrumb-item">breadcrumb</a>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h2 data-toggle="collapse" data-target="#test20210330">使用bootstrap创建表单，表单元素input textarea selection在.from-control的控制下宽度控制100%</h2>
+            <div class="collapse" id="test20210330" data-parent=".container">
+                <h3>堆叠表单，垂直方向在from里面添加form-group 在使用label 标签 以及class .form-control</h3>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" placeholder="Enter password">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Remember me
+                          </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">submit</button>
+                </form>
+
+                <h3>内联表单，垂直方向在from里面添加form-group 在使用label 标签 以及class .form-control</h3>
+                <form action="#" class="form-inline">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" placeholder="Enter password">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Remember me
+                          </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h2 data-toggle="collapse" data-target="#test20210331">BootStrap4支持以下表单控件input textarea checkout radio select</h2> 
+            <div class="collapse" id="test20210331" data-parent=".container">
+                <h3>input 输入框 form-control 控制下100%显示</h3>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control">
+                    </div>
+                </form>
+                <h3>textarea 输入框</h3>
+                <div class="form-group">
+                    <label for="comment">Comment</label>
+                    <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <h3>checkbox div label input顺序</h3>
+                <div class="form-check">
+                    <label for="checkbox" class="form-check-label">
+                        <input type="checkbox" class="form-check-input">option 1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label for="checkbox" class="form-check-label">
+                        <input type="checkbox" class="form-check-input">option 1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label for="checkbox" class="form-check-label">
+                        <input type="checkbox" class="form-check-input">option 1
+                    </label>
+                </div>
+                <h3>checkbox 使用.form-check-inline</h3>
+                <div class="form-check form-check-inline">
+                    <label for="checkbox" class="form-check-label">
+                        <input type="checkbox" class="form-check-input">option 2
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label for="checkbox" class="form-check-label">
+                        <input type="checkbox" class="form-check-input">option 2
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <label for="checkbox" class="form-check-label">
+                        <input type="checkbox" class="form-check-input">option 2
+                    </label>
+                </div>
+                <h3>radio 选框</h3>
+                <div class="radio">
+                    <label for="radio"><input type="radio" name="hobby" value="0">test 1</label>
+                </div>
+                <div class="radio">
+                    <label for="radio"><input type="radio" name="hobby" value="0">test 1</label>
+                </div>
+                <div class="radio">
+                    <label for="radio"><input type="radio" name="hobby" value="0">test 1</label>
+                </div>
+                <h3>radio inline 的样式选框 要把所有label放在一个div .radio里面</h3>
+                <div class="radio">
+                    <label for="test" class="radio-inline"><input type="radio" name="pp">test 2</label>
+                    <label for="test" class="radio-inline"><input type="radio" name="pp">test 2</label>
+                    <label for="test" class="radio-inline"><input type="radio" name="pp">test 2</label>
+                </div>
+                <h3>select 表单元素</h3>
+                <div class="form-group">
+                    <label for="selection">选项：</label>
+                    <select name="city" id="" class="form-control">
+                        <option value="0">option 1</option>
+                        <option value="0">option 1</option>
+                        <option value="0">option 1</option>
+                        <option value="0">option 1</option>
+                        <option value="0">option 1</option>
+                        <option value="0">option 1</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h2 data-toggle="collapse" data-target="#test20210401">我们可以使用.input-group类向表单输入框添加更多样式</h2> 
+            <div class="collapse" id="test20210401" data-parent=".container">
+                <h3>使用.input-group-prepend类可以在输入框的前面文本信息，.input-group-append类添加在输入框的后面，可以使用.input-group-text来设置文本框</h3>
+                <form action="#">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">@</span>
+                        </div>
+                        <input type="text" placeholder="Enter emaill" class="form-control">
+                    </div>
+                    <div class="input-group">
+                        <input type="text " placeholder="fdjsfjljafdl" class="form-control">
+                        <div class="input-group-append">
+                            <span class="input-group-text">></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">提交</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h2 data-toggle="collapse" data-target="#test20210402">自定义表单样式</h2> 
+            <div class="collapse" id="test20210402" data-parent=".container">
+                <h3>自定义复选框，自定义一个复选框，可以设置div为父元素，类为。custom-control和custom-checkbox复选框作为子元素放在该div里面，
+                    然后复选框设置为type="checkbox"类为.custom-control-input.复选框的文本使用label标签，标签使用.custom-control-label类
+                    for属性需要匹配复选框的id
+                    
+                </h3>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="checkb">
+                    <label for="checkb" class="custom-control-label">custom checkbox</label>
+                </div>
+                <h3>自定义一个单选框，可以设置div元素为父元素，类为.custom-control和。custom-radio.
+                    单选框作为子元素放在该div里面，然后单选框设置type="radio",类为.custom-control-input,单选框文本使用label标签，
+                    label 标签使用.custom-control-label label的for属性值需要匹配的单选框的id.
+                </h3>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="radio1">
+                    <label for="radio1" class="custom-control-label">custom radio</label>
+                </div>
+                <h3>
+                    自定义选择菜单，我们可以在select元素上添加.custom-select,并通过custom-select-lg,custom-select-sm来设置大小
+                </h3>
+                <select name="cars" id="" class="custom-select-sm">
+                    <option value="google" selected>google</option>
+                    <option value="baidu" >baidu</option>
+                    <option value="BMW">BMW</option>
+                    <option value="www" >www</option>
+                </select>
+                <select name="cars" id="" class="custom-select-lg">
+                    <option value="google" selected>google</option>
+                    <option value="baidu" >baidu</option>
+                    <option value="BMW">BMW</option>
+                    <option value="www" >www</option>
+                </select>
+                <h3>自定义滑块控件，我们可以在input为type="range"的输入框中添加.custom-range类来设置自定义滑块控件</h3>
+                <label for="customRange">自定义滑块控件</label>
+                <input type="range" id="customRange" class="custom-range">
+                <label for="defaultRange">默认的滑块控件</label>
+                <input type="range" id="defaultRange">
+                <h3>自定义文件上传，我们可以在父元素添加.custom-file类，然后在input设置type="file"，并添加.custom-file-input类
+                    上传的控件文本可以用label标签，标签使用.custom-file-label类，for的属性值需要匹配id值
+                </h3>
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="file1">
+                    <label for="file1" class="custom-file-label">choose your file</label>
+                </div>
+                <br>
+                原生file的样式
+                <br>
+                <input type="file">
+            </div>
+        </div>
+
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h2 data-toggle="collapse" data-target="#test20210416">轮播图，如何创建一个轮播图</h2>
+            <div class="collapse" data-parent=".container" id="test20210416">
+                <h4>.carousel 创建一个轮播
+                    <br>
+                    .carousel-indicators 为轮播图添加一个指示符，轮播图下面的小点，可以显示是第几张。
+                    <br>
+                    .carousel-inner 添加要切换的图片
+                    <br>
+                    .carousel-item  添加图片的内容
+                    <br>
+                    .carousel-control-prev 添加左侧按钮，点击会返回上一张
+                    <br>
+                    .carousel-control-next 添加右侧按钮，点击会跳到下一张
+                    <br>
+                    .carousel-control-prev-icon 左侧按钮的图标，与.carousel-control-pre 一起使用
+                    <br>
+                    .carousel-control-next-icon 右侧按钮图标， 与.carousel-control-next 一起使用
+                    <br>
+                    <h4>轮播图上 添加描述 在每个carousel-item里面添加carousel-caption并添加描述</h4>
+                    
+                </h4>
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo" data-slide-to="1"></li>
+                        <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://static.runoob.com/images/mix/img_fjords_wide.jpg"alt="">
+                            <div class="carousel-caption">
+                                <h3>This a yougaa image</h3>
+                                <p>image description image description</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://static.runoob.com/images/mix/img_nature_wide.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h3>This a 1 image</h3>
+                                <p>image description image description</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://static.runoob.com/images/mix/img_mountains_wide.jpg" alt="">
+                            <div class="carousel-caption">
+                                <h3>This a 2 image</h3>
+                                <p>image description image description</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#demo" class="carousel-control-prev" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a href="#demo" class="carousel-control-next" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                    <style>
+                        .carousel-inner{
+                            width:100%;
+                            height:100%;
+                        }
+                        .carousel-control-next{
+                            margin-right:60px;
+                        }
+                    </style>
+                    
+
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210407">modal 模态框</h3>
+            <div class="collapse" id="test20210407" data-parent=".container">
+                <h5>模态框是覆盖在父窗体的子窗体。通常，目的是显示来自一个单独的原内容，可以在不离开父窗体
+                    的情况下有一些互动子窗体可以提供信息交互等。
+                </h5>
+                <button data-toggle="modal" data-target="#mymodal" class="btn btn-success">start</button>
+                <div class="modal" id="mymodal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>This is a title</h3>
+                                <button class="close" data-dismiss="modal">&times</button>
+                            </div>
+                            <div class="modal-body">
+                                This is one content body.
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-success" data-dismiss="modal">Closed</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210408">Bootstrap 的提示框</h3>
+            <div class="collapse" id="test20210408" data-parent=".container">
+                <h5>如何创建提示框
+                    通过向元素添加data-toggle="tooltip"来创建提示框，title 属性的内容为提示框显示的内容。
+                    <br>
+                    注意这里提示框要写在jQuery 代码里面，然后调用tooltip()方法；
+                </h5>
+                <button class="btn btn-success" data-toggle="tooltip" title="This is one tooltips.">tooltip test</button>
+                <br>
+                可以使用data-placement属性来设定提示框显示的方向top botttom left right
+                可以使用data-html="true"来添加html标签
+                <br>
+                <button class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="I am one tooltip bottom">tooltip bottom</button>
+                <button class="btn btn-success" data-toggle="tooltip" data-placement="right" title="I am <h2>one</h2> tooltip right" data-html="true">tooltip right</button>
+                <script>
+                    $(document).ready($('[data-toggle="tooltip"]').tooltip());
+                </script>
+            </div>
+        </div>
+
+
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210409">Bootstrap 的弹出框</h3>
+            <div class="collapse" id="test20210409" data-parent=".container">
+                <h5>弹出框控件类似于提示框，在鼠标点击元素后显示，与提示框不同的是可以显示更多的内容
+                </h5>
+                <br>
+                <h4>如何创建弹出框</h4>
+                <h5>
+                    向元素添加data-toggle="popover"来创建弹出框；
+                    title属性的内容为弹出框的标题，data-content 显示了弹出框的文本内容；
+                    使用data-placement="left" "right" 来显示弹出框的控制方向;
+                    弹出框要写在初始化代码里面，对指定元素调用popover()方法。
+                    <br>
+                    默认情况下弹出框再次点击元素就会关闭，可以使用data-trigger="foucs"，设置Hover属性来设置鼠标点击元素之外的外部区域来关闭弹窗。
+                </h5>
+                <button class="btn btn-success" data-toggle="popover" title="this is one popover title" data-content="This is content" data-placement="bottom">popover</button>
+                <button class="btn btn-success" data-toggle="popover" title="this is one popover title" data-content="This is content" data-placement="right">test popover</button>
+                <button class="btn btn-success" data-toggle="popover" title="This one title" data-placement="bottom" data-content="This is one focus area" data-trigger="focus">popover focus area</button>
+                <button class="btn btn-warning" data-toggle="popover" title="Title" data-placement="top" data-content="This is content hover area" data-trigger="hover">popover hover</button>
+            </div>
+            <script>
+                $(document).ready(
+                    function(){
+                        $("[data-toggle='popover']").popover();
+                    }
+                )
+            </script>
+        </div>
+
+
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210413">Bootstrap 滚动监听</h3>
+            <div class="collapse" id="test20210413" data-parent=".container">
+                <h5>
+                    滚动监听，即自动更新导航插件，会根据滚动条的位置自动更新对应的导航目标
+                    <br>
+                    如何创建滚动监听？
+                    <br>
+                    向你想要监听的元素，通常是body,添加data-spy="scroll",然后添加data-target属性他的值为导航栏的id
+                    或者class,任意可滚动向元素上的id必须匹配导航栏上的连接选项，设置相对定位：使用data-spy="scroll"的
+                    元素需要将css position 属性设置为relative才起作用。
+                    <br>
+                </h5>
+                    <div data-spy="scroll" data-target="#scrollSpy" style="position:relative">
+                        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed" id="scrollSpy">
+                            <ul class="navbar-nav" >
+                                <li class="navbar-item">
+                                    <a href="#section1" class="nav-link">section1</a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="#section2" class="nav-link">section2</a>
+                                </li>
+                                <li class="navbar-item">
+                                    <a href="#section3" class="nav-link">section3</a>
+                                </li>
+                            </ul>
+                            <br>
+                            <div id="section1">
+                                <h1>section1</h1>
+                                <p>fdateat</p>
+                                <p>fdateat</p>
+                                <p>fdateat</p>
+                                <p>fdateat</p>
+                            </div>
+                            <br>
+                            <div id="section2" >
+                                <h1>Section 2</h1>
+                                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                              </div>
+                              <br>
+                              <div id="section3" >
+                                <h1>Section 3</h1>
+                                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                                <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+                              </div>
+                        </nav>
+                    </div>
+                
+            </div>
+                
+        </div>
+
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210415">Bootstrap 小工具</h3>
+            <div class="collapse" id="test20210415" data-parent=".container">
+                <h5>
+                    边框圆角设置
+                </h5>
+                <span class="rounded" style="width:100px;height:100px;display: inline-block;background-color: black;"></span>
+                <span class="rounded-top" style="width:100px;height:100px;display: inline-block;background-color: black;"></span>
+                <span class="rounded-circle" style="width:100px;height:100px;display: inline-block;background-color: black;"></span>
+                <span class="rounded-0" style="width:100px;height:100px;display: inline-block;background-color: black;"></span>
+                <h5>
+                    float-left float-right clearfix 分别是左浮动，右浮动，清除浮动
+                </h5> 
+                <span class="rounded clearfix" style="width:100px;height:100px;display: inline-block;background-color: black;"></span>
+                <span class="rounded-top float-left" style="width:100px;height:100px;display: inline-block;background-color: black;"></span>
+                <span class="rounded-circle float-right" style="width:100px;height:100px;display: inline-block;background-color: black;"></span>
+                <span class="rounded-0" style="width:100px;height:100px;display: inline-block;background-color: black;"></span>
+                <h5>
+                    mx-auto 居中显示
+                </h5>
+                <div class="mx-auto bg-warning" style="width:150px;height: 150px;"></div>
+                <h5>
+                    使用.w-25 .w-50来显示宽度 .mw-100来显示最大宽度
+                </h5>
+                <div class="bg-warning w-25" style="width:40px;height:40px;"></div>
+                <div class="bg-warning w-50" style="width:40px;height:40px;"></div>
+                <div class="bg-warning w-100" style="width:40px;height:40px;"></div>
+            </div>
+            
+        </div>
+
+
+
+
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210420">flex 弹性盒子</h3>
+            <div class="collapse" id="test20210420" data-parent=".container">
+                弹性盒子是css3的一种布局模式，是一种当页面需要适应不同屏幕大小以及设备类型时确保元素
+                拥有恰当的行为的布局方式
+                <br>
+                弹性盒子由弹性容器和弹性子元素组成，通过设置display属性的值为flex或inline-flex定义弹性容器
+                <br>
+                弹性容器外以及弹性子元素内时正常渲染的，弹性盒子只定义了弹性子元素如何在弹性容器内布局。
+                <br>
+                弹性子元素通常在弹性盒子内一行显示，默认情况下每个容器只有一行
+                <br>
+                <style>
+                    .flex-container{
+                        display: flex;
+                        width:400px;
+                        height: 250px;
+                        background-color: lightgrey;
+                    }
+                    .flex-item{
+                        background-color: cornflowerblue;
+                        width: 100px;
+                        height: 100px;
+                        margin: 10px;
+                    }
+                </style>
+                <div class="flex-container">
+                    <div class="flex-item">test1</div>
+                    <div class="flex-item">test2</div>
+                    <div class="flex-item">test3</div>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210422">flex 弹性盒子排列方式</h3>
+
+            <div class="collapse" id="test20210422" data-parent=".container">
+                <h5>
+                    flex-direction:row 横向排列从左到右，默认的排序方式，左对齐
+                    <br>
+                    flex-direction:row-reverse 逆向排序，反转横向排列，右对齐
+                    <br>
+                    flex-direction:column 纵向列排序
+                    <br>
+                    flex-direction:column-reverse 反转纵向排列，从后向前排列
+                </h5>
+                <div class="flex-container" style="flex-direction:column-reverse">
+                    <div class="flex-item">item 1</div>
+                    <div class="flex-item">item 2</div>
+                    <div class="flex-item">item 3</div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210427">flex的align-item 属性</h3>
+
+            <div class="collapse" id="test20210427" data-parent=".container">
+                <h5>
+                    align-items 设置或检查弹性盒子元素在策州方向上的对齐方式
+                    <br>
+                    align-items:flex-start|flex-end|center|baseline|stretch
+                    <br>
+                    flex-start：弹性盒子元素的纵轴起始位置的边界仅靠在该行的策州其实边界
+                    <br>
+                    flex-end:弹性盒子元素的纵轴其实位置的边界紧靠该行的结束边界
+                    <br>
+                    center:弹性盒子在改行的纵轴上居中放置
+                    <br>
+                    baseline:如果弹性盒子元素的行内与纵轴为同一条，则该值与flex-start 等效
+                    <br>
+                    strech:如果指定纵轴大小的属性值为auto,则其值会使项目的边距尺寸尽可能接近所在行的尺寸；
+                </h5>
+                <div class="flex-container" style="align-items: stretch;">
+                    <div class="flex-item">item 1</div>
+                    <div class="flex-item">item 2</div>
+                    <div class="flex-item">item 3</div>
+                </div>
+                <div class="flex-container" style="align-items: flex-end;">
+                    <div class="flex-item">item 1</div>
+                    <div class="flex-item">item 2</div>
+                    <div class="flex-item">item 3</div>
+                </div>
+                <div class="flex-container" style="align-items:center;">
+                    <div class="flex-item">item 1</div>
+                    <div class="flex-item">item 2</div>
+                    <div class="flex-item">item 3</div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210426">flex的justify-content 属性</h3>
+
+            <div class="collapse" id="test20210426" data-parent=".container">
+                <h5>flex-start :弹性项目向行头紧挨填充，这是个默认值，第一弹性向的main-start的外边距边线被放置在改行的
+                    main-start边线，而后续弹性项一次平齐摆放
+                    <br>
+                    flex-end:弹性项目项行尾紧挨着填充，第一个弹性行的main-end的外边距先放置改行的main-end边线，而后续弹性项
+                    一次平齐摆放。
+                    <br>
+                    center:弹性项目居中紧挨着填充
+                    <br>
+                    space-between:弹性醒目平均分布在该行上，如果剩余空间未赋值或者只有一个弹性项，则改制等同于flex-start
+                    否则，第一个弹性项的外边距和行的main-start边线对齐
+                    <br>
+                    space-around 弹性项目平均分布在该行上，两边留有一半的间隔空间
+                    <br>
+                </h5>
+                    <div class="flex-container" style="justify-content:flex-start">
+                        <div class="flex-item">flex items 1</div>
+                        <div class="flex-item">flex items 2</div>
+                        <div class="flex-item">flex items 3</div>
+                    </div>
+                    <div class="flex-container" style="justify-content:flex-end">
+                        <div class="flex-item">flex items 1</div>
+                        <div class="flex-item">flex items 2</div>
+                        <div class="flex-item">flex items 3</div>
+                    </div>
+                    <div class="flex-container" style="justify-content:center">
+                        <div class="flex-item">flex items 1</div>
+                        <div class="flex-item">flex items 2</div>
+                        <div class="flex-item">flex items 3</div>
+                    </div>
+                    <div class="flex-container" style="justify-content:space-between">
+                        <div class="flex-item">flex items 1</div>
+                        <div class="flex-item">flex items 2</div>
+                        <div class="flex-item">flex items 3</div>
+                    </div>
+                    <div class="flex-container" style="justify-content:space-around">
+                        <div class="flex-item">flex items 1</div>
+                        <div class="flex-item">flex items 2</div>
+                        <div class="flex-item">flex items 3</div>
+                    </div>
+                
+            </div>
+        </div>
+
+
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210428">flex的wrap属性</h3>
+
+            <div class="collapse" id="test20210428" data-parent=".container">
+                <h5>
+                    flex-wrap属性用于指定弹性盒子的子元素换行方式
+                    <br>
+                    语法：
+                    flex-wrap:nowrap|wrap|wrap-reverse|inital|inherit
+                    <br>
+                    nowrap-默认，弹性容器为单行，该情况下弹性子项可能会益处容器
+                    <br>
+                    wrap-弹性容器为多行，该情况下弹性子项移除的部分会放置新行，子项内部会发生断行
+                    wrap-reverse 反转wrap排列
+                    <br>
+
+                </h5>
+                <div class="flex-container" style="flex-wrap: nowrap;">
+                    这个nowrap 当子项宽度溢出后仍然单行显示
+                    <div class="flex-item" style="width: 200px;">item 1</div>
+                    <div class="flex-item"> item 2</div>
+                    <div class="flex-item">item 3</div> 
+                </div>
+                <div class="flex-container" style="flex-wrap: wrap;">
+                    这个wrap 当子项宽度溢出后会多行显示分开
+                    <div class="flex-item" style="width:200px">item 1</div>
+                    <div class="flex-item"> item 2</div>
+                    <div class="flex-item">item 3</div> 
+                </div>
+
+                <div class="flex-container" style="flex-wrap:wrap-reverse">
+                    在这个里面会多行显示而且逆向排序
+                    <div class="flex-item" style="width: 200px;">item 1</div>
+                    <div class="flex-item">item 2</div>
+                    <div class="flex-item">item 3</div>
+                </div>
+
+
+                
+
+                
+                
+            </div>
+        </div>
+
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210429">flex的align-content属性</h3>
+
+            <div class="collapse" id="test20210429" data-parent=".container">
+                <h5>
+                    align-content 属性用于修改flex-wrap 属性的行为，类似于align-items，但它不是设置各个行的对齐
+                    <br>
+                    语法align-content:flex-start|flex-end|center|space-between|space-around|stretch
+                    <br>
+                    Stretch -默认。各行将会伸展以占用剩余空间
+                    <br>
+                    flex-start-各行向弹性盒子容器的开始位置堆叠
+                    <br>
+                    flex-end 各行开始向弹性盒子容器的结束位置堆叠
+                    <br>
+                    center 各行向弹性容器盒子的中间位置堆叠
+                    <br>
+                    space-between 各行在弹性盒子容器中平均分布
+                    <br>
+                    space-around各行在两端保留子元素之间间距大小的一半。
+                </h5>
+                <div class="flex-container" style="flex-wrap:wrap;align-content:flex-end;height:600px;border:1px solid red;">
+                    <div class="flex-item" style="width:200px">item 1</div>
+                    <div class="flex-item">item 2</div>
+                    <div class="flex-item">item 3</div>
+                </div>
+                <div class="flex-container" style="flex-wrap:wrap;align-content:flex-start;height:600px;border:1px solid red;">
+                    <div class="flex-item" style="width:200px">item 1</div>
+                    <div class="flex-item">item 2</div>
+                    <div class="flex-item">item 3</div>
+                </div>
+                <div class="flex-container" style="flex-wrap:wrap;align-content:center;height:600px;border:1px solid red;">
+                    <div class="flex-item" style="width:200px">item 1</div>
+                    <div class="flex-item">item 2</div>
+                    <div class="flex-item">item 3</div>
+                </div>
+                <div class="flex-container" style="flex-wrap:wrap;align-content:stretch;height:600px;border:1px solid red;">
+                    <div class="flex-item" style="width:200px">item 1</div>
+                    <div class="flex-item">item 2</div>
+                    <div class="flex-item">item 3</div>
+                </div>
+                <div class="flex-container" style="flex-wrap:wrap;align-content:space-between;height:600px;border:1px solid red;">
+                    <div class="flex-item" style="width:200px">item 1</div>
+                    <div class="flex-item">item 2</div>
+                    <div class="flex-item">item 3</div>
+                </div>
+                <div class="flex-container" style="flex-wrap:wrap;align-content:space-around;height:600px;border:1px solid red;">
+                    <div class="flex-item" style="width:200px">item 1</div>
+                    <div class="flex-item">item 2</div>
+                    <div class="flex-item">item 3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210430">flex的order和align-self 属性</h3>
+
+            <div class="collapse" id="test20210430" data-parent=".container">
+                <h5>
+                    弹性子元素属性
+                    <br>
+                    排序，语法
+                    <br>
+                    order:属性设置弹性容器内弹性子元素属性
+                    integer:用整数值来定义排列顺序，数值小的排在前面，可以为负值
+                    <br>
+                    对齐：设置margin的值为auto的值，自动获得弹性容器中剩余的空间。所以设置为垂直方向
+                    <br>
+                    margin的值为auto可以使弹性子元素在容器得两个轴方向都完全居中
+                    <br>
+                    align-self:属性用于设置弹性元素自身在侧轴方向上得对齐方式
+                    <br>
+                    align-self:auto|flex-start|flex-end|center|baseline|stretch
+                    <br>
+                    auto:如果align-self的值为auto,则计算值为元素的父元素align-items的值，如果其没有父元素，则计算值为“strech”
+                    <br>
+                    flex-start:弹性子元素的纵轴起始位置的边界紧靠这改行的侧轴起始边界
+                    <br>
+                    flex-end:弹性盒子元素的侧轴起始位置的边界紧靠住改行的侧轴结束边界
+                    <br>
+                    center:弹性盒子元素的行内轴与侧轴为一条，则该值与“flex-start”等效
+                    <br>
+                    stretch:如果指定侧轴大小的值为“auto”,则其值会使项目的边距盒的尺寸尽可能接近所在行的尺寸。
+                </h5>
+                <div class="flex-container">
+                    <div class="flex-item" style="margin:auto">item 1</div>
+                    <div class="flex-item" style="order:-1"> item 2</div>
+                    <div class="flex-item">item 3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210504">bootstrap4的flex</h3>
+
+            <div class="collapse" id="test20210504" data-parent=".container">
+                <h5>使用d-flex创建一个弹性盒子容器</h5>
+                <div class="d-flex p-3 text-white bg-secondary">
+                    <div class="p-2 bg-info">flex item 1</div>
+                    <div class="p-2 bg-danger">flex item 1</div>
+                    <div class="p-2 bg-warning">flex item 1</div>
+                </div>
+                <h5>创建显示在同一行的弹性盒子容器使用d-inline-flex</h5>
+                <div class="d-inline-flex p-3 bg-secondary text-white">
+                    <div class="p-3 bg-info">flex item 1</div>
+                    <div class="p-3 bg-danger">flex item 2</div>
+                    <div class="p-3 bg-warning">flex item 3</div>
+                </div>
+                <h5>flex-row可以设置弹性子元素的水平显示，使用flex-row-reverse 设置右对齐显示，就是与flex-row相反</h5>
+                <div class="d-flex flex-row p-3 bg-secondary text-white">
+                    <div class="p-2 bg-info">flex item1</div>
+                    <div class="p-2 bg-info">flex item2</div>
+                    <div class="p-2 bg-info">flex item3</div>
+                </div>
+                <div class="d-flex flex-row-reverse p-3 bg-secondary text-white">
+                    <div class="p-2 bg-info">flex item1</div>
+                    <div class="p-2 bg-info">flex item2</div>
+                    <div class="p-2 bg-info">flex item3</div>
+                </div>
+                <h5>
+                    flex-column 设置弹性子元素垂直方向显示
+                </h5>
+                <div class="d-flex flex-column p-3 bg-secondary text-white">
+                    <div class="bg-info p-3">flex item 1</div>
+                    <div class="bg-info p-3">flex item 2</div>
+                    <div class="bg-info p-3">flex item 3</div>
+                </div>
+                <div class="d-flex flex-column-reverse p-3 bg-secondary text-white">
+                    <div class="bg-info p-3">flex item 1</div>
+                    <div class="bg-info p-3">flex item 2</div>
+                    <div class="bg-info p-3">flex item 3</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210505">bootstrap4的flex内容排序</h3>
+
+            <div class="collapse" id="test20210505" data-parent=".container">
+                <h5>
+                    justify-content-*:用于修改弹性子元素的排列方式，*号允许的只有start end center between space-around
+                </h5>
+                <br>
+                <div class="d-flex text-white bg-secondary justify-content-start">
+                    <div class="bg-info p-2">flex item 1</div>
+                    <div class="bg-info p-2">flex item 2</div>
+                    <div class="bg-info p-2">flex item 3</div>
+                </div>
+                <div class="d-flex text-white bg-secondary justify-content-end">
+                    <div class="bg-info p-2">flex item 1</div>
+                    <div class="bg-info p-2">flex item 2</div>
+                    <div class="bg-info p-2">flex item 3</div>
+                </div>
+                <div class="d-flex text-white bg-secondary justify-content-center">
+                    <div class="bg-info p-2">flex item 1</div>
+                    <div class="bg-info p-2">flex item 2</div>
+                    <div class="bg-info p-2">flex item 3</div>
+                </div>
+                <div class="d-flex text-white bg-secondary justify-content-between">
+                    <div class="bg-info p-2">flex item 1</div>
+                    <div class="bg-info p-2">flex item 2</div>
+                    <div class="bg-info p-2">flex item 3</div>
+                </div>
+                <div class="d-flex text-white bg-secondary justify-content-around">
+                    <div class="bg-info p-2">flex item 1</div>
+                    <div class="bg-info p-2">flex item 2</div>
+                    <div class="bg-info p-2">flex item 3</div>
+                </div>
+                <br>
+                <h5>flex-fill强制使弹性子元素等宽</h5>
+                <div class="d-flex text-white bg-secondary justify-content-start">
+                    <div class="bg-info p-2 flex-fill">flex item 1</div>
+                    <div class="bg-info p-2 flex-fill">flex item 2</div>
+                    <div class="bg-info p-2 flex-fill">flex item 3</div>
+                </div>
+                <div class="d-flex text-white bg-secondary justify-content-start">
+                    <div class="bg-info p-2 flex-fill">flex item 1</div>
+                    <div class="bg-warning p-2 flex-fill">flex item 2</div>
+                    <div class="bg-success p-2 flex-fill">flex item 3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210506">bootstrap4的flex设置子元素规则</h3>
+
+            <div class="collapse" id="test20210506" data-parent=".container">
+                <h5>
+                    flex-grow-1 用来设置子元素使用剩下空间
+                    <br>
+                    flex-shrink-1 用于设置子元素收缩规则
+                    <br>
+
+                </h5>
+                <div class="d-flex p-4 bg-secondary mb-3">
+                    <div class="bg-info text-white p-2">flex item 1</div>
+                    <div class="bg-info text-white p-2">flex item 2</div>
+                    <div class="bg-info text-white p-2 flex-grow-1">flex item 3</div>
+                </div>
+                <div class="d-flex p-4 bg-secondary mb-3">
+                    <div class="bg-info text-white p-2">flex item 1</div>
+                    <div class="bg-info text-white p-2 flex-shrink-1">flex item 2</div>
+                    <div class="bg-info text-white p-2">flex item 3</div>
+                </div>
+                <h5>order 类可以设置弹性子元素，从order-1 到order-12 数字越低权重越高</h5>
+                <br>
+                <div class="d-flex mb-3 bg-secondary p-3">
+                    <div class="bg-info p-2 text-white">flex item 1</div>
+                    <div class="bg-info p-2 text-white">flex item 2</div>
+                    <div class="bg-info p-2 text-white">flex item 3</div>
+                </div>
+                <div class="d-flex mb-3 bg-secondary p-3">
+                    <div class="bg-info p-2 text-white order-3">flex item 1</div>
+                    <div class="bg-info p-2 text-white order-2">flex item 2</div>
+                    <div class="bg-info p-2 text-white order-1">flex item 3</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210507">bootstrap4的flex设置子元素规则</h3>
+
+            <div class="collapse" id="test20210507" data-parent=".container">
+                <h5>包裹 flex-nowrap(默认) flex-warp flex-wrap-reverse
+                    <br>
+                    flex-nowrap 是把元素全部展开来，不考虑父元素的影响
+                    <br>
+                    flex-wrap 是把子元素全部放进父元素当中
+                </h5>
+                <div class="d-flex bg-secondary mb-3 p-3 ">
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                </div>
+                <div class="d-flex bg-secondary mb-3 p-3 flex-wrap">
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                </div>
+                <div class="d-flex bg-secondary mb-3 p-3 flex-wrap-reverse">
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                    <div class="bg-info text-white p-2">test item 1</div>
+                </div>
+                <h5>
+                    外边距mr-auto类可以设置子元素由编剧为auto 即margin-right:auto ml-auto 可以设置子元素左边距为auto
+
+                </h5>
+                <div class="d-flex mb-3 p-3 bg-secondary">
+                    <div class="bg-info p-3 text-white mr-auto">test item 1</div>
+                    <div class="bg-info p-3 text-white">test item 1</div>
+                    <div class="bg-info p-3 text-white">test item 1</div>
+                </div>
+                <div class="d-flex mb-3 p-3 bg-secondary">
+                    <div class="bg-info p-3 text-white">test item 1</div>
+                    <div class="bg-info p-3 text-white">test item 1</div>
+                    <div class="bg-info p-3 text-white ml-auto">test item 1</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210510">bootstrap4的flex内容对齐</h3>
+
+            <div class="collapse" id="test20210510" data-parent=".container">
+                <h5>
+                    我们可以是哟个align-content-*来控制垂直方向上如何去堆叠子元素，包含的值有align-center-start，
+                    align-content-end,alig-content-center,align-content-cneter,align-content-between，align-content-around
+                    <br>
+                    这些类只有一行弹性子元素是无效的
+                    <div class="d-flex bg-secondary mb-3 p-3 flex-wrap align-content-end " style="height: 300px;">
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 26</div>
+                    </div>
+                    <div class="d-flex bg-secondary mb-3 p-3 flex-wrap align-content-around" style="height:300px">
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                    </div>
+                    <div class="d-flex bg-secondary mb-3 p-3 flex-wrap align-content-center" style="height:300px">
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                    </div>
+                    <div class="d-flex bg-secondary mb-3 p-3 flex-wrap align-content-between" style="height:300px">
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                        <div class="bg-info text-white p-2">test item 1</div>
+                    </div>
+                    <br>
+                    如果要设置单行的子元素对齐可以使用 align-items-*来控制 align-items-start  align-items-end align-items-center align-items-baseline
+                    align-items-stretch
+                    <br>
+                    <div class="d-flex mb-3 p-3 bg-secondary flex-warp align-items-end" style="height: 300px;">
+                        <div class="text-white bg-info p-2">flex items 1</div>
+                        <div class="text-white bg-info p-2">flex items 2</div>
+                        <div class="text-white bg-info p-2">flex items 3</div>
+                    </div>
+                    <div class="d-flex mb-3 p-3 bg-secondary flex-warp align-items-center" style="height: 300px;">
+                        <div class="text-white bg-info p-2">flex items 1</div>
+                        <div class="text-white bg-info p-2">flex items 2</div>
+                        <div class="text-white bg-info p-2">flex items 3</div>
+                    </div>
+                    <div class="d-flex mb-3 p-3 bg-secondary flex-warp align-items-stretch" style="height: 300px;">
+                        <div class="text-white bg-info p-2">flex items 1</div>
+                        <div class="text-white bg-info p-2">flex items 2</div>
+                        <div class="text-white bg-info p-2">flex items 3</div>
+                    </div>
+                </h5>
+            </div>
+        </div>
+
+        <div class="alert alert-info alert-dismissable fade show">
+            <h3 data-toggle="collapse" data-target="#test20210512">bootstrap4的多媒体对象</h3>
+
+            <div class="collapse" id="test20210512" data-parent=".container">
+                <h5>
+                    BootStrap的多媒体对象，bootstrap提供了很好的方式处理多媒体对象，应用场景博客评论，微博等等
+                <br>
+                要创建一个多媒体对象，可以在容器上添加media类，然后将多媒体对象内容放到容器上。子容器需要添加media-body
+                类，然后添加外边距等效果
+                </h5>
+                <div class="media p-3">
+                    <img src="https://static.runoob.com/images/mix/img_fjords_wide.jpg" alt="media img" class="rounded-circle mr-3 align-self-center " style="width:60px;height: 60px;">
+                    <div class="media-body">
+                        <h2>fdsafd</h2>
+                        <p>fdasfdsalkl;jklfdsajjlfjdlksajjfdjjflkdaj;lk</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

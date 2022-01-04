@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/react/16.4.0/umd/react.development.js"></script>
+    <script src="https://cdn.staticfile.org/react-dom/16.4.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+</head>
+<body>
+    <div id="test20210916001"></div>
+    <script type="text/babel">
+        ReactDOM.render(
+            <h1>react.min.js-react的核心库,
+                react-dom.min.js-提供与dom 相关的功能,babel.min.js 可以将ES6转换ES5代码，提升对JSX的支持
+            </h1>,
+            document.getElementById("test20210916001")
+        )
+    </script>
+    <p>元素是react构成的最小单位，它用于描述屏幕上输出的内容</p>
+    const element=<h1>test element</h1>
+    <p>与浏览器DOM元素不同，React当中元素是普通的对象</p>
+    <p>开发应用是一般只会定义一个根节点，要将React元素渲染到根节点当中，通过把他们传递给React.render()的方法渲染到页面上。</p>
+    <div id="test20210917001"></div>
+    <script type="text/babel">
+        const element=<h2>test ReactDOM.render()</h2>;
+        ReactDOM.render(
+            element,
+            document.getElementById("test20210917001")
+        )
+    </script>
+    <h2>更新元素渲染</h2>
+    <p>React 元素都是不可变的当元素被创建后是无法改变内容和属性的，更新一个元素的方法是创建一个新的元素传递给ReactDOM</p>
+    <div id="test20210917002"></div>
+    <script type="text/babel">
+        
+        function timer(){
+            const element=(
+                                <div>
+                                    <h2>time</h2>
+                                    <br/>
+                                    <h3>Now  is  {new Date().toLocaleTimeString()}.</h3>
+                                </div>
+                            );
+            ReactDOM.render(
+                element,
+                document.getElementById("test20210917002")
+            )
+        };
+        setInterval(timer,1000);
+    </script>
+    <div id="test20210917003"></div>
+    <script type="text/babel">
+        class Pointer extends React.Component{
+                render(){
+                    return <p>{this.props.date.toLocaleTimeString()}</p>
+                }
+            }
+        class Clock extends React.Component{
+            render(){
+                return (
+                    <h2>Now time is<Pointer date={this.props.date}/></h2>
+                )
+            }
+        }
+        
+        function tick(){
+            ReactDOM.render(
+                <Clock date={new Date()}/>,
+                document.getElementById("test20210917003")
+                )
+        }
+        setInterval(tick,1000);
+    </script>
+</body>
+</html>

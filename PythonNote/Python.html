@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Python Note Document</title>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1>Python Notes</h1>
+        <p class="text-info">Some details about python.</p>
+    </div>
+    <div class="container">
+        <div class="alert alert-info alert-dismissable">
+            <h2 data-toggle="collapse" data-target="#python0513">Python 小点</h2>
+            <div class="collapse" id="python0513" data-parent=".container">
+                <h3>Python 保留字</h3>
+                <p>
+                    >>> import keyword
+                    >>> keyword.kwlist
+                    ['False', 'None', 'True', 'and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+                </p>
+                <h3>多行语句</h3>
+                <p>语句很长，可以使用反斜杠来实现多行语句 eg. total=item1+\
+                    item2+\
+                </p>
+                <h3>Python 数字类型</h3>
+                <p>
+                    Python 数字中有四种类型：整数，布尔型，浮点型，复数类型
+                    <br>
+                    int 整数，只有一种类型，就是长整型
+                    <br>
+                    bool：True
+                    <br>
+                    浮点数：如1.23 
+                    <br>
+                    complex 复数类型 1+2j
+                    <br>
+                </p>
+                <h3>
+                    Python 字符串类型
+                </h3>
+                <p>
+                    使用三个引号可以指定一个多行字符串
+                    <br>
+                    反斜杠可以用来转义，可以使用r来使用使反斜杠不转义
+                    <br>
+                    字符串可以用+来连接字符串，使用*运算符重复
+                </p>
+                <h3>python print 默认使换行的 可以在后面加上 end='' 来去掉换行</h3>
+                <p>print("python test",end='')</p>
+                <h3>
+                    python argv,path，platform
+                </h3>
+                <p>
+                    sys.argv  命令行的参数，包括脚本名称
+                    <br>
+                    sys.path  查找模块所在的目录列表
+                    <br>
+                    sys.platform 查找运行平台的系统 win or linux ...
+                </p>
+            </div>
+        </div>
+        <div class="alert alert-info alert-dismissable">
+            <h2 data-toggle="collapse" data-target="#python0624">number 函数</h2>
+            <div class="collapse" id="python0624" data-parent=".container">
+                <h3>exp()函数</h3>
+                <p>exp函数 返回x的指数 exp()是不能之际访问的，需要导入math模块通过静态调用该方法</p>
+                <h3>floor函数</h3>
+                <p>
+                    floor(x)返回数字的下舍整数 也就是小于等于x 通过静态调用该方法
+                    <br>
+                    floor()是不能直接访问的，需要导入Math模块，通过静态对象调用该方法
+                </p>
+            </div>
+        </div>
+        <div class="alert alert-info alert-dismissable">
+            <h2 data-toggle="collapse" data-target="#python0625">log 函数</h2>
+            <div class="collapse" id="python0625" data-parent=".container">
+                <h3>log()函数</h3>
+                <p>
+                    log(x)方法返回以e为基底的x的对数
+
+                    log(x1,x2)返回以x2为基底的x1的对数
+
+                    log10(x)返回以10为基底的x的对数
+                </p>
+            </div>
+        </div>
+        <div class="alert alert-info alert-dismissable">
+            <h2 data-toggle="collapse" data-target="#python0628">max  min 函数</h2>
+            <div class="collapse" id="python0628" data-parent=".container">
+                <h3>max()函数 返回指定参数的最小值，参数可以为序列，入参类型要一致
+                    <br>
+                    min 函数返回指定参数的最小值，参数可以为序列
+                </h3>
+                <p>
+                    入参是序列的话，单序列入参返回序列中最大的一个数值，多序列入参，按索引顺序逐一对比各序列的当前索引的值，直到遇见最大值立即停止对比，返回最大值所在序列
+                </p>
+            </div>
+        </div>
+        <div class="alert alert-info alert-dismissable">
+            <h2 data-toggle="collapse" data-target="#python0629">modf pow 函数</h2>
+            <div class="collapse" id="python0629" data-parent=".container">
+                math.modf()函数 返回x的整数部分与小数部分，两部分的数值符号与x相同，整数部分以浮点型表示。
+                <br>
+                pow() 返回x**y运算后的值
+                <br>
+                内置pow()调用会把参数作为整型，而math模块则会把参数转换成float.
+            </div>
+        </div>
+        <div class="alert alert-info alert-dismissable">
+            <h2 data-toggle="collapse" data-target="#python0809">截取</h2>
+            <div class="collapse" id="python0809" data-parent=".container">
+                <img src="https://static.runoob.com/wp-content/uploads/123456-20200923-1.svg" alt="substring">
+                <br/>
+                反转字符串
+                <br/>
+                inputwords[-1::-1] <br/>
+                第一个参数-1 表示最后一个元素
+                第二个参数为空，表示移动到末尾
+                第三个参数为步长-1，表示逆向。
+            </div>
+        </div>
+    </div>
+</body>
+</html>

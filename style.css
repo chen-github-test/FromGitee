@@ -1,0 +1,11 @@
+.content{color:green!important;font-size:20px;font-family:verdana;}
+.Date{color:green;font-size:24px;text-align:right;}
+.Datastyle{}
+big{color:green;}
+strong{background-color:red;color:deepblack;}
+.Ending{color:blue;font-size:30px;font-family:"宋体"}
+#header{background-color:black;color:white;text-align:center;padding:100px;}
+#nav{background-color:#eeeeee;height:10000px;width:20%;float:left;padding:10px;line-heigh:30px;}
+#section{width:60%;float:left;padding:5px;}
+#footer{background-color:black;color:white;padding:20px;text-align:center;clear:both}
+#testJquery20210118001{width:100px;height:200px;color:red;background-color: azure;}

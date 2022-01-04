@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testFrom</title>
+</head>
+<body>
+    <form id="d" action="" method="get">
+        <input name="user" type="text" /><br /> 
+        <input name="pass" type="text" /><br />
+        <select name="color">
+            <option value="red">红色</option>
+            <option value="blue">蓝色</option>
+        </select><br />
+
+    </form>
+    <input type="button" value="firstOne" onclick="alert(document.getElementById('d').elements[0].value)">
+    <input type="button" value="second" onclick="alert(document.getElementById('d').elements['pass'].value)">
+    <input type="button" value="lastOne" onclick="alert(document.getElementById('d').color.value)">
+</body>
+</html>
