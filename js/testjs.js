@@ -44,4 +44,7 @@ $(document).ready(function(){
         event.stopPropagation();
         $(".2022010402").append(event.isPropagationStopped().toString());
     })
+    $(".2022010501").on("click",function(e){
+        $(".2022010502").html(e.metaKey.toString());
+    })
 })
