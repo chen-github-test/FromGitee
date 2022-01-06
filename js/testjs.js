@@ -47,4 +47,12 @@ $(document).ready(function(){
     $(".2022010501").on("click",function(e){
         $(".2022010502").html(e.metaKey.toString());
     })
+    $(".2022010601").bind("test.zcNameSpace",function(event){
+        $(".2022010602").html(event.namespace);
+    })
+    $(".2022010601").on("click",function(){
+      $(this).trigger("test.zcNameSpace");
+        
+    })
+   
 })
