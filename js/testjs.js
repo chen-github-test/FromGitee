@@ -54,5 +54,8 @@ $(document).ready(function(){
       $(this).trigger("test.zcNameSpace");
         
     })
+    $(".2022010701").on("mousemove",function(e){
+        $(this).html("("+e.pageX+","+e.pageY+")");
+    })
    
 })
