@@ -57,5 +57,8 @@ $(document).ready(function(){
     $(".2022010701").on("mousemove",function(e){
         $(this).html("("+e.pageX+","+e.pageY+")");
     })
+    $(".20220110").on("mouseover",function(event){
+        $(".2022011001").append(event.relatedTarget.nodeName);
+    })
    
 })
