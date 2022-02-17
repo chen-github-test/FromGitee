@@ -122,7 +122,6 @@
                 .mx-auto d-block 用于图片居中
                 <br/>
                 .img-fluid 用于设置响应图片
-
             </span>
 
         </div>
@@ -134,6 +133,48 @@
                     <span class="text-danger 2022011001 "></span>
                 </span>
             </div>
+        </div>
+    </div>
+    <div>
+        
+    </div>
+        <span >Day 317</span>
+        <div  class="alert alert-info m-3">
+            提示框可以使用alert 类后面加上 .alert-success  .alert-info .alert-warning .alert-light  .alert-dark 来实现
+        </div>
+        <div class="alert alert-success m-3 alert-dismissible">
+            可以在提示框中的div中添加.alert-dismissiable 类 然后再关闭按钮的链接上添加 class="btn-close" 和 data-bs-dismiss="alert" 设置操纵完成
+            同时用fade 和 .show 类 用于设置提示框在关闭时淡出淡入效果.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" fade show>
+  
+            </button>
+        </div>
+        <div class="alert alert-info alert-dismissible m-3" >
+            <button type="button" class="btn btn-outline-info">information</button>
+            <button type="button" class="btn btn-info">
+                <span class="spinner-border spinner-border-sm"></span>
+                Loading...
+            </button>
+            <button type="button" class="btn btn-info">
+                <span class="spinner-grow spinner-grow-sm"></span>
+                Loading...
+            </button>
+            <button type="button" class="btn btn-close" data-bs-dismiss="alert" fade show></button>
+        </div>
+    </div>
+    <div class="alert alert-info">
+        按钮组以及下拉菜单
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"> Apple</button>
+            <button type="button" class="btn btn-primary">sma</button>
+            <div class="btn-grop">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">fdsf</a></li>
+                    <li><a href="#" class="dropdown-item">1310</a></li>
+                </ul>
+            </div>
+            
         </div>
     </div>
     
