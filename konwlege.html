@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>konwlege</title>
+</head>
+<body>
+<p>
+    http协议是无状态的，服务端业务必须是有状态的，Cookie诞生最初为了存储web状态信息，比如判断用户是否第一次访问网站。
+    Cookie的处理：
+    服务器向客户端发送cookie
+    浏览器保存cookie
+    之后http请求携带cookie发送客户端
+    发送cookie:<br/>
+    服务端向客户端发送cookie是通过http响应报文设置的，在set-cookie中设置向客户端发送的cookie信息<br/>
+    set-cookie:"name=value;domain=.domain.com;path=/;expire=data;httponly;secure"<br/>
+    cookie 是保存在客户端的纯文本。通过使用电脑浏览器访问网页，服务端生成证书返回浏览器写入电脑，这个证书就是cookie<br/>
+    cookie是怎么工作的?
+    当我们访问某个网站，服务器首先根据浏览器的编号生成一个cookie返回给客户端。客户端下次访问将本地cookie加上url一同给服务器
+    服务器以此来辨别用户状态。有时候，我们买东西加入购物车不想保存数据库，直接保存cookie当中，只要cookie没有失效，便可本地查询<br>
+    cookie包含两种类型，一保存在内存中的cookie，这种一般是服务器没有设置生存周期，也就是maxage=0或者为负数。这种cookie只在当前
+    会话有效，关掉浏览器就会立即失效。还有一种是保存本地客户端的cookie，这种一般是服务端设置生存周期 maxage为正数，不管是
+    关掉浏览器或者是重新启动机器，只要cookie生效，浏览器就会找对应appliaction 的cookie，自己写入。
+</p>
+<p>
+    web应用程序是http协议传输数据的，http协议无状态协议，一旦数据发生交换，客户端与服务器连接就会关闭，再次交换数据就会建立新的连接
+    cookie是服务端生成，发送给user-aget，告诉浏览器自动将cookie一key和value的形式保存在本地.<br/>
+    cookie 保质期：每个浏览器都含有自己的cookie，每次请求都会根据domain来发送相应的cookie，可通过设置expires 与max-age来设定保质日期。<br/>
+    image.google.com 与www.google.com同属于Google,但是域名不一样，不能操作彼此的cookie。cookie在本地可以被更改文件，敏感的数据信息不要放在cookie里。<br/>
+    <script>
+        document.cookie="age=18;"
+        document.cookie="name=zvvvv;"
+        document.cookie="max-age=0;"
+        document.cookie="sex=male"
+    </script>>
+<p>
+    cookie的域名：Cookie是不可以跨域名的，正常情况下同一个一级域名下的两个二级域名不能交互使用cookie，比如test1.mytestfuctino.com
+    和test2.mytestfunction.com是不完全相同的，如果想要使得mytestfunction下的二级域名全部使用，可以设置参数domain=.mytestfuncion.com
+    这样两个二级域名就可以访问同一个cookie了。
+    一级域名 baidu.com ,qq.com,由一级域名引申出来的成为二级域名，例如www.baidu.com,me.playerauctions.com,blog.csdn.com等等；
+</p>
+</p>
+
+</body>
+</html>

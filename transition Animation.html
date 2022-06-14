@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition and animation</title>
+    <style>
+        .test001{
+            width:200px;
+            height:180px;
+            background:red;
+            position:relative;
+            left:0px;
+            -webkit-transition: width 5s,height 5s,transform 5s;
+            transition:5s;
+        }
+        .test001:hover{
+            width:400px;
+            height:380px;
+            background:blue;
+            transform:rotate(720deg);
+            -webkit-transform:rotate(720deg);
+            position:relative;
+            left:500px;
+
+        }
+        .test002{
+
+            width:200px;
+            height:180px;
+            background-color:red;
+            position:relative;
+            -webkit-animation:myAnimation 5s linear 0s infinite alternate;
+            animation:myAnimation 5s linear 0s infinite alternate;
+        }
+        @keyframes myAnimation {
+            from{background:red;left:0px;transform:rotate(0deg);}
+            to{background:blue;left:500px;transform:rotate(-360deg);}
+        }
+        .test003{
+            width:200px;
+            height:180px;
+            background:red;
+            -webkit-animation:myAnimation001 2s linear 0s infinite;
+            animation:myAnimation001 2s linear 0s infinite;
+        }
+        @keyframes myAnimation001{
+            from{transform:rotatex(0deg);}
+            to{transform:rotatex(360deg);transform:rotatey(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="test001">
+        用transition 实现 animation 效果
+    </div>
+    <br/>
+    <div class="test002">
+        用animation 实现 transition 的效果
+    </div>
+    <br/>
+    <div class="test003">
+        用@keyframes animation 技术实现rotatex()
+    </div>
+</body>
+</html>
